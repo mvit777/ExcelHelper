@@ -51,6 +51,7 @@ All my wrapper does (and more) can be done by [ClosedXml](https://github.com/Clo
 The only drawback, at least for me atm, is that you need to use templates which may or maynot suit your needs.
 
  [ClosedXml.Report](https://github.com/ClosedXML/ClosedXML.Report) looks pretty promising anyway and I wish to look into it soon. From their very own description:
-> ClosedXML.Report is a tool for report generation and data analysis in .NET applications through the use of Microsoft Excel. 
+> ClosedXML.Report is a tool for report generation and data analysis 
+> in .NET applications through the use of Microsoft Excel. 
 > It is a .NET-library for report generation Microsoft Excel without requiring Excel to be installed on the machine that's running the code. 
 > With ClosedXML.Report, you can easily export any data from your .NET classes to Excel using the XLSX-template.
