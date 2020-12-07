@@ -16,11 +16,11 @@ from their own repository description:
 
 outputs a table with a total row. Only numeric columns are taken into consideration
 ```
-            var SomeDataTable = GetDataTable(sql);
+var SomeDataTable = GetDataTable(sql);
             
-            var file = AppDomain.CurrentDomain.BaseDirectory + "/output/rowtotal.xlsx";
+var file = AppDomain.CurrentDomain.BaseDirectory + "/output/rowtotal.xlsx";
             
-            ExcelHelper eh = ExcelHelper.Create(file)
+ExcelHelper eh = ExcelHelper.Create(file)
                         .Dump(SomeDataTable, "SHEET1")
                         .AddRowTotal("SHEET1", "A", "Tot.", true)
                         .Save();
@@ -35,11 +35,11 @@ string sql = "SELECT * FROM Invoices ORDER BY OrderDate";
             ExcelHelper eh = ExcelHelper.Create(file)
                         .Dump(results, "SHEET1")
                         .DoPivotTable("SHEET1",
-                                                        "SHEET2",
-                                                        new string[] { "ShipCountry" },
-                                                        new string[] { "ProductName" },
-                                                        new string[] { "ExtendedPrice" }
-                                                     )
+                                      "SHEET2",
+                                      new string[] { "ShipCountry" },
+                                      new string[] { "ProductName" },
+                                      new string[] { "ExtendedPrice" }
+                                     )
                         .Save();
             eh.Dispose();
 ```
