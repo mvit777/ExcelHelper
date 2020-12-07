@@ -1,6 +1,6 @@
-ExcelHelper
+# ExcelHelper
 
-a wrapper with a few convenience shortcut for ClosedXml
+a wrapper with a few convenience shortcuts for ClosedXml
 
 Features:
 - Automatic total row with formula
