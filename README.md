@@ -24,15 +24,15 @@ ExcelHelper eh = ExcelHelper.Create(file)
                         .Dump(SomeDataTable, "SHEET1")
                         .AddRowTotal("SHEET1", "A", "Tot.", true)
                         .Save();
-            eh.Dispose();
+eh.Dispose();
 ```
 outputs a pivot table
 ```
 string sql = "SELECT * FROM Invoices ORDER BY OrderDate";
-            var results = GetDataTable(config, sql, null);
-            var file = AppDomain.CurrentDomain.BaseDirectory + "/output/pivot_at_once.xlsx";
+var results = GetDataTable(config, sql, null);
+var file = AppDomain.CurrentDomain.BaseDirectory + "/output/pivot_at_once.xlsx";
            
-            ExcelHelper eh = ExcelHelper.Create(file)
+ExcelHelper eh = ExcelHelper.Create(file)
                         .Dump(results, "SHEET1")
                         .DoPivotTable("SHEET1",
                                       "SHEET2",
@@ -41,7 +41,7 @@ string sql = "SELECT * FROM Invoices ORDER BY OrderDate";
                                       new string[] { "ExtendedPrice" }
                                      )
                         .Save();
-            eh.Dispose();
+eh.Dispose();
 ```
 
 
