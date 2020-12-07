@@ -26,6 +26,7 @@ ExcelHelper eh = ExcelHelper.Create(file)
                         .Save();
 eh.Dispose();
 ```
+![RowTotal](https://github.com/mvit777/ExcelHelper/raw/master/img/rowTotal.png)
 outputs a pivot table in a separate SHEET
 ```
 string sql = "SELECT * FROM Invoices ORDER BY OrderDate";
