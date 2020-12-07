@@ -43,7 +43,7 @@ ExcelHelper eh = ExcelHelper.Create(file)
                         .Save();
 eh.Dispose();
 ```
-![PivotTable](https://github.com/mvit777/ExcelHelper/tree/master/pivot2.png)
+![PivotTable](https://github.com/mvit777/ExcelHelper/tree/master/img/pivot2.png)
 ## Final Notes
 [ClosedXml](https://github.com/ClosedXML/ClosedXML) has not reached a stable 1.0 release yet, so api may change.
 I'm using my wrapper in production and it happened to me a few times to make tweaks.
