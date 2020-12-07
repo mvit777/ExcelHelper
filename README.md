@@ -26,7 +26,7 @@ ExcelHelper eh = ExcelHelper.Create(file)
                         .Save();
 eh.Dispose();
 ```
-outputs a pivot table
+outputs a pivot table in a separate SHEET
 ```
 string sql = "SELECT * FROM Invoices ORDER BY OrderDate";
 var results = GetDataTable(config, sql, null);
