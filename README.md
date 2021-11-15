@@ -15,7 +15,7 @@ from their own repository description:
 ## How to use ExcelHelper
 
 outputs a table with a total row. Only numeric columns are taken into consideration
-```
+```csharp
 var SomeDataTable = GetDataTable(sql);
             
 var file = AppDomain.CurrentDomain.BaseDirectory + "/output/rowtotal.xlsx";
@@ -29,7 +29,7 @@ eh.Dispose();
 ![RowTotal](https://github.com/mvit777/ExcelHelper/raw/master/img/rowTotal.png)
 
 outputs a pivot table in a separate SHEET
-```
+```csharp
 string sql = "SELECT * FROM Invoices ORDER BY OrderDate";
 var results = GetDataTable(config, sql, null);
 var file = AppDomain.CurrentDomain.BaseDirectory + "/output/pivot_at_once.xlsx";
